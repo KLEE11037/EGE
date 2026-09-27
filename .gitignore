@@ -148,3 +148,4 @@ cython_debug/
 
 /tests/detailed_progress.png
 /tests/common_progress.png
+/tests/rename_queue.db
