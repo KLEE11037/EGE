@@ -5,7 +5,7 @@ def to_ternare (num,base):
         num//=base
     return res[::-1]
 
-
+answer = 0
 for n in range(1,10000):
     ternare_n = str(to_ternare(n,3))
     if n%3==0:
@@ -15,8 +15,10 @@ for n in range(1,10000):
     result = int(r,3)
 
 
-    if result<250:
-        print(int(r,3))
+    if result > 250:
+        print(n)
+        answer = n
+        break
 
 
 
@@ -24,7 +26,7 @@ for n in range(1,10000):
 
 
 
-answer = 242
+#answer = 
 
 #
 
