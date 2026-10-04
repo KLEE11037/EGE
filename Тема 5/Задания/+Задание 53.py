@@ -15,16 +15,16 @@ for n in range(1,10000):
 
 
     result = int(r,3)
-    print(f'n={n}, n_3={ternare_n}, r_3={r}, r_10={result}')
+    #print(f'n={n}, n_3={ternare_n}, r_3={r}, r_10={result}')
 
 
     if result <= 250:
-        print(n)
+        #print(n)
         answer = n
         
 
 
-
+print(answer)
 
 
 

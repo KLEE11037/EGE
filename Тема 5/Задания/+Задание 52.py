@@ -1,3 +1,4 @@
+answer = 0
 for n in range(1, 10000):
     b = bin(n)[2:]
     count_zeros_odd = 0
@@ -14,6 +15,7 @@ for n in range(1, 10000):
     r = abs(count_ones_even - count_zeros_odd)
     if r ==5:
         print(n)
+        answer = n
         break
 # Решение
 
@@ -21,9 +23,6 @@ for n in range(1, 10000):
 
 
 
-
-
-answer = 1023
 
 #
 

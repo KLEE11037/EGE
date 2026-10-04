@@ -1,15 +1,9 @@
 for n in range(1,10000):
     r = bin(n)[2:]
-    r_inv = ''
-    for c in r:
-        if c == '0':
-            r_inv+='1'
-        else:
-            r_inv+='0'
-    r_inv = r_inv.lstrip('0')
-    if r_inv =='':
-        r_inv = '0'
-    r = int(r_inv,2)
+    r = r.replace('0','2').replace('1','0').replace('2','1').lstrip('0')
+    if r =='':
+        r = '0'
+    r = int(r,2)
     if n - r ==999:
         print(n)
         break
