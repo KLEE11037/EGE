@@ -7,7 +7,7 @@ for i in range(4):
     right(90)
 for i in range(5):
     forward(5*k)
-    right(90)
+    right(45)
 up()
 for x in range(-20,20):
     for y in range(-20,20):
@@ -22,7 +22,7 @@ done()
 
 
 
-answer = 65
+answer = 67
 
 #
 
