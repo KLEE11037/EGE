@@ -22,7 +22,7 @@ up()
 for x in range(-10,10):
     for y in range(-20,10):
         setpos(x*k,y*k)
-        dot(5,(1,0,0))
+        dot(5,)
 done()
 
 
@@ -31,7 +31,7 @@ done()
 
 
 
-answer = 12
+answer = 189
 
 #
 
