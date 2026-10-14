@@ -1,4 +1,4 @@
-answer = ...
+answer = 'М36'
 
 #
 
