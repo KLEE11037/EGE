@@ -216,18 +216,19 @@ print(count)</code></pre>
                     <div class="pre-code">
 <pre class="line-numbers match-braces" data-download-link><code class="language-python">from ipaddress import ip_network
 
-a1, a2 = '133.44.76.210', '133.44.77.5'
-
 for mask in range(32, 0, -1):
-    net1 = ip_network(f'{a1}/{mask}', False)
-    net2 = ip_network(f'{a2}/{mask}', False)
+    net1 = ip_network(f'133.44.76.210/{mask}', False)
+    net2 = ip_network(f'133.44.77.5/{mask}', False)
     if net1.network_address == net2.network_address:
         break
 
-net = ip_network(f'{a1}/{mask}', False)
-print('Сеть:', net)
+net = ip_network(f'133.44.76.210/{mask}', False)
 
-count = sum(1 for ip in net if f'{ip:b}'.count('1') == 14)
+count = 0
+for ip in net:
+    f'{ip:b}'.count('1') == 14:
+        count += 1
+
 print('Ответ:', count)</code></pre>
                     </div>
                     <p><strong>Результат:</strong> сеть <span class="code">133.44.76.0/23</span>, ответ — <span class="code">126</span> адресов.</p>
